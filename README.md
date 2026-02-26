@@ -70,12 +70,12 @@ filterResourceCustomData.zip/
 1. Open **SAP Digital Manufacturing**
 2. Navigate to **Manage PODs 2.0**
 3. Select the **Extensions** tab
-4. Click **Create**
+4. Click **Upload**
 5. Fill in:
    - **Name**: `Filter Resource Custom Data`
    - **Namespace**: `custom/filtercustomdata`
    - **Source Code**: Upload the ZIP file
-6. Click **Create**
+6. Click **Save**
 
 ## Usage Example
 
@@ -92,8 +92,7 @@ filterResourceCustomData.zip/
 
 4. The extracted value will be available at:
    - `/oeeKpiTarget` - The value (e.g., `OEE_LB_KPI_TARGET`)
-   - `/oeeKpiTarget_details` - Full result object for debugging
-
+   
 ### Using the Result in Other Widgets
 
 Other widgets can access the extracted value using:
