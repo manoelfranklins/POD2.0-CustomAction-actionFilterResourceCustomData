@@ -2,34 +2,11 @@
 
 A POD 2.0 Custom Action that extracts a specific attribute value from a resource's `customValues` array and stores it in PodContext.
 
+<img width="994" height="399" alt="image" src="https://github.com/user-attachments/assets/0b5ee660-beaf-4e34-844a-42b411c786a1" />
+
 ## Use Case
 
-This action is useful when you need to extract KPI targets or other custom data from resource configurations in SAP Digital Manufacturing.
-
-## Input Data Structure
-
-The action expects a `customValues` array in the following format:
-
-```json
-[
-    {
-        "attribute": "OEE_KPI_TARGET",
-        "value": "OEE_LB_KPI_TARGET"
-    },
-    {
-        "attribute": "AVAILABILITY_KPI_TARGET",
-        "value": "AVLB_KPI_TARGET"
-    },
-    {
-        "attribute": "PERFORMANCE_KPI_TARGET",
-        "value": "PERF_LB_KPI_TARGET"
-    },
-    {
-        "attribute": "QUALITY_KPI_TARGET",
-        "value": "QTY_LB_KPI_TARGET"
-    }
-]
-```
+This action is useful when you need to filter and extract custom values by attribute in SAP Digital Manufacturing POD 2.0.
 
 ## Configuration Properties
 
@@ -39,6 +16,8 @@ The action expects a `customValues` array in the following format:
 | **Attribute Name** | The attribute name to search for | `OEE_KPI_TARGET` |
 | **Output Context Path** | PodContext path where the result will be stored | `kpiTarget` |
 | **Default Value** | Value to return if attribute not found (optional) | `N/A` |
+
+<img width="994" height="399" alt="image" src="https://github.com/user-attachments/assets/0b5ee660-beaf-4e34-844a-42b411c786a1" />
 
 ### ⚠️ Important: Custom Values Path
 
@@ -77,9 +56,27 @@ filterResourceCustomData.zip/
    - **Source Code**: Upload the ZIP file
 6. Click **Save**
 
+## Configuration
+
+Using any Event, (‘Enter Page’ for example) attach the custom Action and configure accordingly:
+
+<img width="1918" height="580" alt="image" src="https://github.com/user-attachments/assets/1c55c43d-acc6-49ce-b699-c7a456fc4587" />
+
+So, as soon as the event is triggered, the Value of the configured Attribute will be available in POD context via ‘Output Context Path’, in this case {/resourceAttribute}:
+
+<img width="764" height="362" alt="image" src="https://github.com/user-attachments/assets/e77ea79d-9fb4-417b-8570-90d50c02175d" />
+
+For my test resource, the value of ‘OEE_LB_KPI_TARGET’ is ‘Manoel Costa’
+
+<img width="1268" height="515" alt="image" src="https://github.com/user-attachments/assets/ca6d77cd-7508-4e4b-96ae-4a9775f06d62" />
+
+So when I give it a try, I see:
+
+<img width="420" height="236" alt="image" src="https://github.com/user-attachments/assets/87bb416a-2255-47d9-a780-3f80a1bc0204" />
+
 ## Usage Example
 
-### Scenario: Extract OEE KPI Target
+### Scenario: Filter and Extract Resource Custom Value by Attribute
 
 1. Add the action to your POD in the POD Designer
 2. Configure the action properties:
