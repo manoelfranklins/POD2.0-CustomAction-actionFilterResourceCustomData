@@ -1,0 +1,9 @@
+{
+    "widgets": [],
+    "actions": [
+        {
+            "modulePath": "custom/filtercustomdata/action/FilterResourceCustomDataAction",
+            "type": "custom.filtercustomdata.action.FilterResourceCustomData"
+        }
+    ]
+}
