@@ -56,6 +56,8 @@ filterResourceCustomData.zip/
    - **Source Code**: Upload the ZIP file
 6. Click **Save**
 
+<img width="1504" height="698" alt="image" src="https://github.com/user-attachments/assets/57da6c90-3113-479d-9ca8-40bab5107d03" />
+
 ## Configuration
 
 Using any Event, (‘Enter Page’ for example) attach the custom Action and configure accordingly:
