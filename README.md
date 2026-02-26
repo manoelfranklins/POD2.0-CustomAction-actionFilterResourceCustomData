@@ -1,8 +1,8 @@
 # Filter Resource Custom Data Action
 
-A POD 2.0 Custom Action that extracts a specific attribute value from a resource's `customValues` array and stores it in PodContext.
+A POD 2.0 Custom Action that extracts a specific attribute value from a `customValues` array and stores it in PodContext.
 
-<img width="994" height="399" alt="image" src="https://github.com/user-attachments/assets/0b5ee660-beaf-4e34-844a-42b411c786a1" />
+<img width="749" height="422" alt="image" src="https://github.com/user-attachments/assets/8a92cd2c-6049-4372-9bf5-9abbe1c81b1f" />
 
 ## Use Case
 
